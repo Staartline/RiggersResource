@@ -53,8 +53,27 @@
 		}
 
 		.flexitem{
-			min-width: 200px;
+			min-width: 150px;
 			max-width: 300px;
+		}
+
+		@media(max-width:600px){
+			.gridcontainer{
+				grid-template-columns: 1fr;
+				grid-template-areas:
+				"header"
+				"about"
+				"L2d"
+				"capsoft"
+				"flexbox";
+			}
+			.flex{
+				flex-direction: column;
+			}
+			.flexitem{
+				max-width: 100%;
+			}
+
 		}
 
 	</style>
