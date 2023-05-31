@@ -1,0 +1,83 @@
+		.content{
+			background-color:pink;
+			border-radius: 1%;
+			padding:10px;
+
+			text-align: center;
+
+		}
+		h1,h2,h3{
+			font-family: 'Poppins', sans-serif;
+		}
+
+		ul{
+			padding:0px;
+			list-style: none;
+		}
+
+		p, li, a{
+			font-family: 'Mukta', sans-serif;
+		}
+
+		.gridcontainer{
+			display:grid;
+			grid-template-columns: 1fr 1fr;
+			gap:10px;
+
+			grid-template-areas: 
+			"header header"
+			"about about"
+			"L2d capsoft"
+			"flexbox flexbox";
+		}
+
+		.header{
+			grid-area:header;
+		}
+
+		.about{
+			grid-area:about;
+		}
+
+		.L2d{
+			grid-area:L2d;
+		}
+
+		.capturesoftware{
+			grid-area:capsoft;
+		}
+
+		.flex{
+			grid-area:flexbox;
+
+			display:flex;
+			gap:10px;
+			justify-content:center;
+			align-content:center;
+			width: 100%;
+		}
+
+		.flexitem{
+			min-width: 150px;
+			max-width: 300px;
+			padding: 10px;
+		}
+
+		@media(max-width:600px){
+			.gridcontainer{
+				grid-template-columns: 1fr;
+				grid-template-areas:
+				"header"
+				"about"
+				"L2d"
+				"capsoft"
+				"flexbox";
+			}
+			.flex{
+				flex-direction: column;
+			}
+			.flexitem{
+				max-width: 100%;
+			}
+
+		}

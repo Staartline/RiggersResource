@@ -12,92 +12,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
 
-	<style>
-		.content{
-			background-color:pink;
-			border-radius: 1%;
-			padding:10px;
-
-			text-align: center;
-
-		}
-		h1,h2,h3{
-			font-family: 'Poppins', sans-serif;
-		}
-
-		ul{
-			padding:0px;
-			list-style: none;
-		}
-
-		p, li, a{
-			font-family: 'Mukta', sans-serif;
-		}
-
-		.gridcontainer{
-			display:grid;
-			grid-template-columns: 1fr 1fr;
-			gap:10px;
-
-			grid-template-areas: 
-			"header header"
-			"about about"
-			"L2d capsoft"
-			"flexbox flexbox";
-		}
-
-		.header{
-			grid-area:header;
-		}
-
-		.about{
-			grid-area:about;
-		}
-
-		.L2d{
-			grid-area:L2d;
-		}
-
-		.capturesoftware{
-			grid-area:capsoft;
-		}
-
-		.flex{
-			grid-area:flexbox;
-
-			display:flex;
-			gap:10px;
-			justify-content:center;
-			align-content:center;
-			width: 100%;
-		}
-
-		.flexitem{
-			min-width: 150px;
-			max-width: 300px;
-			padding: 10px;
-		}
-
-		@media(max-width:600px){
-			.gridcontainer{
-				grid-template-columns: 1fr;
-				grid-template-areas:
-				"header"
-				"about"
-				"L2d"
-				"capsoft"
-				"flexbox";
-			}
-			.flex{
-				flex-direction: column;
-			}
-			.flexitem{
-				max-width: 100%;
-			}
-
-		}
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	
@@ -105,7 +20,7 @@
 		<div class="content about fullspan">
 			<h1>Rigger's Resource</h1>
 			<p>So, we rigging?</p>
-			<p>Please note! This is not an official resource. I claim no ownership of any of the resources found at the following links. </p>
+			<p>Please note! This is not an official resource. I claim no ownership of any of the resources found at the following links. However, these links were helpful to me when I was learning how to rig.</p>
 		</div>	
 
 		<div class="content L2d halfspan">
@@ -132,7 +47,7 @@
 			<p>Capture Software is required to move a rigged model for videos or streams.</p>
 			<ul>
 				<li><a href="https://denchisoft.com/" target="_blank">VTube Studio - Denshisoft</a></li>
-				<li></li>
+				<li><a href="https://youtu.be/KWESg9hRaZI" target="_blank">Setting up your L2D Model for use - Daifuku381</a></li>
 			</ul>
 
 		</div>
